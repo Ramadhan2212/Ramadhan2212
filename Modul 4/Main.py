@@ -1,55 +1,76 @@
-# ope
+# operasi komparasi / perbandingan
 
-a = 10
-b = 3
+# hasil operasi selalu bertipe boolean (TRUE / FALSE)
 
-# Operasi tambah (+)
-hasil = a + b
-print(a, "+", b, "=", hasil)
+# >,<, ==,!=,>=,<=,is, dan is not
 
-# Operasi pengurangan (-)
-hasil = a - b
-print(a,"-",b, "=", hasil)
+a = 4
+b = 2
 
-# Operasi perkalian (*)
-hasil = a * b
-print(a, "*", b, "=", hasil)
+#lebih besar dari >
+print ("====lebih besar dari (>)====")
+hasil = a > 3 #TRUE 
+print (a, ">", 3, "=", hasil) 
+hasil = b > 3 #FALSE
+print (b, ">",3, "=", hasil) 
+hasil = b > 2 #FALSE 
+print (b, ">",2, "=", hasil)
 
-# Operasi pembagian (/)
-hasil = a / b
-print(a,"/",b, "=", hasil)
+#kurang dari <
+print ("====kurang dari (<)====")
+hasil = a > 3 #FALSE
+print (b, ">",3, "=", hasil)
+hasil = b > 2 #TRUE
+print (b, ">",2, "=", hasil)
+hasil = b > 2 #FALSE
+print (a, ">", 3, "=", hasil)
 
-# Operasi eksponen (pangkat) (**)
-hasil = a ** b
-print(a, "**",b,"=", hasil)
+#kurang dari sama dengan <= 
+print ("====kurang dari sama dengan (<=)====")
+hasil = a <= 3 #FALSE 
+print (a, "<=", 3, "=", hasil) 
+hasil = b <= 3 #TRUE 
+print (b, "<=",3, "=", hasil) 
+hasil = b <= 2 #TRUE
+print (b, "<=",2, "=", hasil)
 
-# Operasi modulus (sisa bagi) (%)
-hasil = a % b
-print(a, "%", b, "=", hasil)
+#lebih dari sama dengan #=
+print ("====lebih dari sama dengan (>=)====")
+hasil = a >= 3 #TRUE
+print (a, ">=", 3, "=", hasil)
+hasil = b >= 3 #FALSE
+print (b, ">=",3, "=", hasil)
+hasil b >= 2 #TRUE
+print (b, ">=",2, "=", hasil)
 
-#Operasi floor division (pembulatan) (//)
-hasil = a // b
-print(a,"//", b, "=", hasil)
+# sama dengan ==
+print ("====sama dengan (==)====")
+hasila = a == 3 #FALSE
+print (a, "==", 3, "=", hasil)
+hasil = a == 3 #TRUE
+print (a, "==",3, "=", hasil)
 
-# Prioritas operasi, Operational precedence
-'''
-  1. ()
-  2. exponen **
-  3. perkalian dan kawannya*/**% //
-  4. pertambahan dan pengurangan + -
-'''
+# tidak dengan !=
+print ("====tidak dengan (!=)====")
+hasil = a != 3 #TRUE
+print (a, "!", 3, "=", hasil)
+hasil a != 3 #FALSE
+print (a, "!=",3, "=", hasil)
 
-x = 3
-y = 2
-z = 4
+# is sebagai komparasi
+print ("====objek identity ") 
+x = 5
+y = 5
+hasil x is y #TRUE
+print(x, "is", y, "=", hasil) 
+print("nilai x =", x, "id =", hex(id(x))
+print("nilai y =", y, "id =", hex(id(y))
 
-hasil = x ** y * z + x / y - y % z // x
-print(x,"**",y,"*",z,"+",x,"/",у,"-",y,"%",z,"//",x, hasil)
-
-
-hasil x + y * z
-print(x, "+",, "*", z,"=", hasil)
-
-# kurung akan menganbil langkah paling pertama
-hasil = (x + y) * z
-print("(",x,"+",y,") *",z,"=", hasil)
+# is not sebagai komparasi
+print ("====objek identity ") 
+x = 5
+y = 5
+hasil = x is y #FALSE
+print(x, "is", y, "=", hasil)
+print("nilai x =", x, "id =", hex(id(x))
+print("nilai y =", y, "id =", hex(id(y))
