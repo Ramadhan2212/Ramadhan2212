@@ -1,36 +1,40 @@
-# percabangan Bersarang / nested IF
-
-# kalkulator
-# +,-,x,/,mod,//,pangkat(expone)
+# Latihan
+# data data nilai
 
 print(20*"=")
-print("kalkulator sederhana")
+print("Data Nilai")
 print(20*"=")
 
-angka_1 = float(input("masukkan bilangan 1 = "))
-operator = input("operator (+,-,/,x,%,//,**) = ")
-angka_2 = float(input("masukkan bilangan 2 = "))
+nilai = float(input("Masukkan Bilangan = "))
+operator = input("operator (>, <=, =)")
 
-# percabangan bersarang (elif statement)
 
-if operator == '+' :
-    hasil = angka_1 + angka_2
-    print(f'hasilnya adalah = {hasil}')
-elif operator == '-' :
-    hasil = angka_1 - angka_2
-    print(f'hasilnya adalah = {hasil}')
-elif operator == 'x' or operator == '*' :
-    hasil = angka_1 * angka_2
-    print(f'hasilnya adalah = {hasil}')
-elif operator == '/' :
-    hasil = angka_1 / angka_2
-    print(f'hasilnya adalah = {hasil}')
-elif operator == '%' or operator == 'mod' :
-    hasil = angka_1 % angka_2
-    print(f'hasilnya adalah = {hasil}')
-elif operator == '//' :
-    hasil = angka_1 // angka_2
-    print(f'hasilnya adalah = {hasil}')
-elif operator == '**' :
-    hasil = angka_1 ** angka_2
-    print(f'hasilnya adalah = {hasil}')
+# data nilai percabngannya
+
+if operator == '>':
+    hasil = nilai > 90
+    print("nilai nilai huruf = A")
+elif operator == '<=':
+    hasil nilai <= 90 and nilai >= 85
+    print("hasil nilai huruf = A-")
+elif operator == '<=':
+    hasil nilai <= 85 and nilai >= 80
+    print("hasil nilai huruf = B+")
+elif operator == '<=":
+    hasil nilai <= 79 and nilai >= 75
+    print("hasil nilai huruf = B")
+elif operator == '<=':
+    hasil nilai <= 74 and nilai >= 70
+    print("hasil nilai huruf = B-")
+elif operator == '<=':
+    hasil nilai <= 69 and nilai >= 65
+    print("hasil nilai huruf = C+")
+elif operator == '<=':
+    hasil nilai <= 64 and nilai >= 60
+    print("hasil nilai huruf = C")
+elif operator == '<=':
+    hasil nilai <= 59 and nilai >= 55
+    print("hasil nilai huruf = D")
+elif operator == '<=':
+    hasil nilai < 55
+    print("hasil nilai huruf = E")
